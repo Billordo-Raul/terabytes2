@@ -1,0 +1,29 @@
+/* custom style */
+
+.customFileLabelAvatar::after {
+    content: "Avatar" !important;
+}
+
+.userImage {
+    width: 35px;
+    height: 35px;
+}
+.textFirstName,
+.textLastName{
+    font-family: "Roboto_Regular";
+    font-size: 14px;
+}
+
+.displayNoneError{
+    display: none;
+}
+.imgWelcome{
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.countCart{
+    border: 1px solid grey;
+    width: 44px;
+}
+
