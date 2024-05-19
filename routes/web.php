@@ -28,12 +28,12 @@ Route::group([
 ],function(){
     Route::get('create','App\Http\Controllers\UserController@create')->name('user.create');
     Route::get('list','App\Http\Controllers\UserController@index')->name('user.index');
-    Route::get('{user}/edit','UserController@edit')->name('user.edit');
+    Route::get('{user}/edit','App\Http\Controllers\UserController@edit')->name('user.edit');
     Route::post('store','App\Http\Controllers\UserController@store')->name('user.store');
-    Route::post('search','UserController@searchUser')->name('user.search');
-    Route::get('destroy','UserController@destroy')->name('user.destroy');
-    Route::put('{user}/update', 'UserController@update')->name('user.update');
-    Route::get('show','UserController@show')->name('user.show');
+    Route::post('search','App\Http\Controllers\UserController@searchUser')->name('user.search');
+    Route::get('destroy','App\Http\Controllers\UserController@destroy')->name('user.destroy');
+    Route::put('{user}/update', 'App\Http\Controllers\UserController@update')->name('user.update');
+    Route::get('show','App\Http\Controllers\UserController@show')->name('user.show');
 
 });
 Route::resource('provider', ProviderController::class)->middleware('adminUserRole');

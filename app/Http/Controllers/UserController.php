@@ -56,14 +56,13 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-     /*     dd($request); */
+        //   dd($request); 
         try {
             DB::beginTransaction();
 
-
+            // 'first_name'        => 'required|between:1,100',
+            // 'last_name'         => 'required|between:1,100',
             $validator = Validator::make($request->all(), [
-                'first_name'        => 'required|between:1,100',
-                'last_name'         => 'required|between:1,100',
                 'email'             => 'required|between:3,64|email',
             ]);
             if ($validator->fails()) {
@@ -79,37 +78,38 @@ class UserController extends Controller
            /*  echo '<br> dni: '.$dni;
             dd('stop'); */
             $role = Role::where('id', $request->role)->first();
+            // 'username'              => $request->username,
             $user = User::create([
                 'name'                  => $request->name,
-                'username'              => $request->username,
                 'email'                 => $request->email,
                 'password'              => Hash::make($request->password),
             ]);
-            if ($request->file('avatar')) {
-                $image = $request->file('avatar');
-                $type = $image->getClientOriginalExtension();
-                $img = date('Y-m-d-H-i-s') . '-id-' . $user->id . '.' . $type;
-                $image->move('image/user/', $img);
+            // if ($request->file('avatar')) {
+            //     $image = $request->file('avatar');
+            //     $type = $image->getClientOriginalExtension();
+            //     $img = date('Y-m-d-H-i-s') . '-id-' . $user->id . '.' . $type;
+            //     $image->move('image/user/', $img);
 
-                $avatar_image = 'image/user/' . $img;
-            } else {
-                $avatar_image = '/dist/img/user2-160x160.jpg';
-            }
-            $userData = UserData::create([
-                'user_id'           =>  $user->id,
-                'first_name'        =>  $request->first_name,
-                'last_name'         =>  $request->last_name,
-                'dni'               =>  $dni,
-                'avatar'            =>  $avatar_image,
-                'address'           =>  $request->address,
-                'mobile'            =>  $mobile,
-                'date_of_birth'     =>  $request->date_of_birth,
-            ]);
+            //     $avatar_image = 'image/user/' . $img;
+            // } else {
+            //     $avatar_image = '/dist/img/user2-160x160.jpg';
+            // }
+            // $userData = UserData::create([
+            //     'user_id'           =>  $user->id,
+            //     'first_name'        =>  $request->first_name,
+            //     'last_name'         =>  $request->last_name,
+            //     'dni'               =>  $dni,
+            //     'avatar'            =>  $avatar_image,
+            //     'address'           =>  $request->address,
+            //     'mobile'            =>  $mobile,
+            //     'date_of_birth'     =>  $request->date_of_birth,
+            // ]);
 
 
 
-            if (!is_null($user && $userData)) {
-                $user->assignRole($role->name);
+            // if (!is_null($user && $userData)) {
+            if (!is_null($user )) {
+                 $user->assignRole($role->name);
                 DB::commit();
                 $notification = Notification::Notification('User Successfully Created', 'success');
                 return redirect('user/list')->with('notification', $notification);
@@ -117,7 +117,7 @@ class UserController extends Controller
 
 
         } catch (\Exception $e) {
-            /* dd($e); */
+             dd($e); 
             DB::rollBack();
             $notification = Notification::Notification('Error', 'error');
             return redirect('user/create')->with('notification', $notification);

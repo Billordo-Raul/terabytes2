@@ -12,7 +12,7 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title titleModule">User List</h3> <a href="{{ route('user.create') }}" class="btn float-right colorCyan" role="button">+ Add User</a>
+                    <h3 class="card-title titleModule">Lista Usuarios</h3> <a href="{{ route('user.create') }}" class="btn float-right colorCyan" role="button">+ Agregar Usuario</a>
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">
@@ -21,11 +21,11 @@
                         <thead>
                             <tr>
                                 <th style="width:15%; text-align:center">Avatar</th>
-                                <th style="width:15%; text-align:center">Name</th>
+                                <th style="width:15%; text-align:center">Nombre</th>
                                 <th style="width:15%; text-align:center">UserName</th>
                                 <th style="width:10%; text-align:center">Type</th>
                                 <th style="width:15%; text-align:center">Email</th>
-                                <th style="width:20%; text-align:center">First Name, Last Name</th>
+                                <th style="width:20%; text-align:center">Primer Name, Ultimo Name</th>
                                 <th style="text-align:center">Actions</th>
                             </tr>
                         </thead>
@@ -94,7 +94,7 @@
                         </tbody>
                         <tfoot>
                             <thead>
-                                <tr>
+                                <!-- <tr>
                                     <th style="width:15%; text-align:center">Avatar</th>
                                     <th style="width:15%; text-align:center">Name</th>
                                     <th style="width:15%; text-align:center">UserName</th>
@@ -102,7 +102,7 @@
                                     <th style="width:15%; text-align:center">Email</th>
                                     <th style="width:20%; text-align:center">First Name, Last Name</th>
                                     <th style="text-align:center">Actions</th>
-                                </tr>
+                                </tr> -->
                             </thead>
                         </tfoot>
                     </table>

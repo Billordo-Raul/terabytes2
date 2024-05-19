@@ -9,7 +9,7 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title titleModule">Product List</h3> <a href="{{ route('product.create') }}" class="btn float-right colorCyan" role="button">+ Add Product</a>
+                    <h3 class="card-title titleModule">Listar Articulos</h3> <a href="{{ route('product.create') }}" class="btn float-right colorCyan" role="button">+ Agregar Articulo</a>
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">
@@ -17,11 +17,11 @@
 
                         <thead>
                             <tr>
-                                <th style="width:30%; text-align:center">Description</th>
-                                <th style="width:10%; text-align:center">Cost Price</th>
-                                <th style="width:30%; text-align:center">Provider</th>
+                                <th style="width:30%; text-align:center">Descripcion</th>
+                                <th style="width:10%; text-align:center">Precio</th>
+                                <th style="width:30%; text-align:center">Proveedor</th>
                                 <th style="width:20%; text-align:center">Stock</th>
-                                <th style="text-align:center">Actions</th>
+                                <th style="text-align:center">Acciones</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -76,13 +76,13 @@
                         </tbody>
                         <tfoot>
                             <thead>
-                                <tr>
+                                <!-- <tr>
                                     <th style="width:30%; text-align:center">Description</th>
                                     <th style="width:10%; text-align:center">Cost Price</th>
                                     <th style="width:30%; text-align:center">Provider</th>
                                     <th style="width:10%; text-align:center">Stock</th>
                                     <th style="text-align:center">Actions</th>
-                                </tr>
+                                </tr> -->
                             </thead>
                         </tfoot>
                     </table>

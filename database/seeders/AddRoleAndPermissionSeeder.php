@@ -32,9 +32,9 @@ class AddRoleAndPermissionSeeder extends Seeder
             'users.create',
             'users.destroy',
         ]);
+        // 'username'=>    'admin',
         $user = User::create([
             'name'=>    'admin',
-            'username'=>    'admin',
             'email' =>  'admin@gmail.com',
             'password'  => bcrypt('12345678'),
         ]);

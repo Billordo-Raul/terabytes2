@@ -2,7 +2,7 @@
 @extends('layouts.nav')
 @extends('menu.menu')
 @section('content')
-dd()
+
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->

@@ -1,7 +1,7 @@
 <div class="row mt-4">
     <div class="row mb-4">
         <div class="col-2 text-right">
-            <label for="code" class="col-form-label text-right colorLabel code">Description:</label>
+            <label for="code" class="col-form-label text-right colorLabel code">Descripcion:</label>
         </div>
         <div class="col-4">
             <input type="text" class="form-control" name='description' maxlength="100" size="100" required>
@@ -10,7 +10,7 @@
             <label class="col-form-label text-right colorLabel">Precio:</label>
         </div>
         <div class="col-4">
-            <input type="text" class="form-control" name='cos_price' maxlength="100" size="100" required>
+            <input type="text" class="form-control" name='cost_price' data-inputmask='"mask": "99.999.999"' data-mask  required>
         </div>
 
 

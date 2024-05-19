@@ -1,6 +1,6 @@
 <div class="card-body">
     <div class="form-group">
-      <label for="name" class="name">Name{{--   --  <span class="name text-danger displayNoneError" ></span> --}}</label>
+      <label for="name" class="name">Nombre{{--   --  <span class="name text-danger displayNoneError" ></span> --}}</label>
         @if (!empty($user))
             <input type="text" class="form-control" name="name" id="name" placeholder="Name" value="{{ $user->name }}">
         @else
@@ -107,5 +107,5 @@
   <!-- /.card-body -->
 
   <div class="card-footer">
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-primary">Guardar</button>
   </div>
