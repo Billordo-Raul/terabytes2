@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'App\Http\Controllers\WelcomeController@index');
+Route::get('/ejemplovue', 'App\Http\Controllers\EjemploVueController@index');
 
 Auth::routes();
 
