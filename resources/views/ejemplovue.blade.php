@@ -20,7 +20,7 @@
         </style>
     </head>
     <body >
-        dasdasds
+        
             <div id="app">
                 <example-component / >
                 
