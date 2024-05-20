@@ -17,10 +17,10 @@
 
                         <thead>
                             <tr>
-                                <th style="width:30%; text-align:center">Descripcion</th>
+                                <th style="width:30%; text-align:center">Artículo</th>
                                 <th style="width:10%; text-align:center">Precio</th>
-                                <th style="width:30%; text-align:center">Proveedor</th>
-                                <th style="width:20%; text-align:center">Stock</th>
+                                <!-- <th style="width:30%; text-align:center">Proveedor</th>
+                                <th style="width:20%; text-align:center">Stock</th> -->
                                 <th style="text-align:center">Acciones</th>
                             </tr>
                         </thead>
@@ -33,7 +33,7 @@
                                     <td style=" text-align:center">
                                         <span class="textFirstName">{{ !empty($product->cost_price) ? $product->cost_price : '0.00' }}</span>
                                     </td>
-                                    <td style=" text-align:center">
+                                    <!-- <td style=" text-align:center">
                                         <span class="textFirstName">
                                             @if (!empty($product->product_provider))
                                                 @foreach ($product->product_provider as $key => $provider)
@@ -46,10 +46,10 @@
                                                 -
                                             @endif
                                         </span>
-                                    </td>
-                                    <td style=" text-align:center">
+                                    </td> -->
+                                    <!-- <td style=" text-align:center">
                                         <span class="textFirstName">{{ !empty($product->stock) ? $product->stock : '0.00' }}</span>
-                                    </td>
+                                    </td> -->
 
                                     <td>
                                         <div class="d-flex justify-content-center">

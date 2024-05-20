@@ -2,7 +2,9 @@
 @extends('layouts.nav')
 @extends('menu.menu')
 @section('content')
-@endsection
+
+
+
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -32,7 +34,7 @@
             <!-- general form elements -->
             <div class="card card-primary">
               <div class="card-header">
-                <h3 class="card-title">Crear Usuario</h3>
+                <h3 class="card-title">Editar Usuario</h3>
               </div>
               <!-- /.card-header -->
 
@@ -57,6 +59,7 @@
     <!-- /.content -->
 
 </div>
+@endsection
 @section('scripts')
     <script src="{{ asset('js/modules/user/form.js') }}"></script>
 @endsection

@@ -111,7 +111,7 @@ class UserController extends Controller
             if (!is_null($user )) {
                  $user->assignRole($role->name);
                 DB::commit();
-                $notification = Notification::Notification('User Successfully Created', 'success');
+                $notification = Notification::Notification('Usuario Creado Correctamente!!!', 'success');
                 return redirect('user/list')->with('notification', $notification);
             }
 

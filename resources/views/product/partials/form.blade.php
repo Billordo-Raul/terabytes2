@@ -9,10 +9,13 @@
         <div class="col-2 text-right">
             <label class="col-form-label text-right colorLabel">Precio:</label>
         </div>
-        <div class="col-4">
-            <input type="text" class="form-control" name='cost_price' data-inputmask='"mask": "99.999.999"' data-mask  required>
-        </div>
-
+         <div class="col-4"> 
+             <input type="text" class="form-control maskDNI" name='cost_price' data-inputmask="'mask': ['999-999-9999 [x99999]', '+099 99 99 9999[9]-9999']" data-mask  required>  
+            <!-- data-inputmask="'mask': ['999-999-9999 [x99999]', '+099 99 99 9999[9]-9999']" data-mask -->
+            <!-- <input type="text" class="form-control maskDNI" name='cost_price' data-inputmask='"mask": "99.999.999,99"' data-mask  required> -->
+            <!-- <input type="text" class="form-control maskDNI" name="dni" id="dni" placeholder="DNI" data-inputmask='"mask": "99.999.999"' data-mask  value="{{ !empty($user->userdata) ? $user->userdata->dni : '' }}"> -->
+         </div> 
+        
 
         <!-- <div class="col-3">
             <div class="form-group">

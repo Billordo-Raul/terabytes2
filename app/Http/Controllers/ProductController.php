@@ -68,7 +68,7 @@ class ProductController extends Controller
 
         $product = Product::create($data);
         if(!is_null($product)){
-            $notification = Notification::Notification('Product Successfully Created', 'success');
+            $notification = Notification::Notification('Producto Creado Correctamene!!!!', 'success');
             return redirect('product')->with('notification', $notification);
         }
         $notification = Notification::Notification('Error', 'error');

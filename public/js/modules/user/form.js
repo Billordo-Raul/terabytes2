@@ -11,15 +11,15 @@ function validateForm() {
     if ($('#name').val() == "")
         flag = chekedInputOrFields("name");
 
-    if ($('#username').val() == "")
-        flag = chekedInputOrFields("username");
+    /*if ($('#username').val() == "")
+        flag = chekedInputOrFields("username");*/
 
 
    /*  if ($('#first_name').val() == "")
         flag = chekedInputOrFields("first_name"); */
 
-    if ($('#last_name').val() == "")
-        flag = chekedInputOrFields("last_name");
+    /*if ($('#last_name').val() == "")
+        flag = chekedInputOrFields("last_name");*/
 
     const email =$('#email').val();
 
@@ -35,30 +35,31 @@ function validateForm() {
     if ($('#role').val() == null)
         flag = chekedInputOrFields("role");
 
-    if ($('#dni').val() == "")
-        flag = chekedInputOrFields("dni");
+    /*if ($('#dni').val() == "")
+        flag = chekedInputOrFields("dni");*/
 
-    let archivoInput = document.getElementById('avatar');
+    /* *****let archivoInput = document.getElementById('avatar'); */
     /* let files = document.getElementById('avatar').files; */
-    let zero= document.getElementsByName('avatar');
+    /*let zero= document.getElementsByName('avatar');
     let archivoRuta = archivoInput.value;
     let extPermitidas = /(.png|.gif|.jpg|.jpeg)$/i;
     if(!extPermitidas.exec(archivoRuta)){
         archivoInput.value = '';
         flag = chekedInputOrFields("avatar");
-    }
-    if(zero.length=="")
+    } 
+*/
+  /*  if(zero.length=="")
         flag = chekedInputOrFields("avatar");
-
-    if ($('#address').val() == "")
+*/
+  /*  if ($('#address').val() == "")
         flag = chekedInputOrFields("address");
 
-    if ($('#mobile').val() == "")
+  /*  if ($('#mobile').val() == "")
         flag = chekedInputOrFields("mobile");
 
     if ($('#date_of_birth').val() == "")
         flag = chekedInputOrFields("date_of_birth");
-
+*/
 
 
     return flag;

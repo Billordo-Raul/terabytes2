@@ -124,33 +124,26 @@
     <div class="col">
       <div class="card" style="width: 18rem;">
         <img src="image/img/1.webp" class="card-img-top img-fluid" alt="...">
-        <div class="card-body">
-          <p class="card-text h5">Buzo Team Valor </p>
-        </div>
+        
       </div>
     </div>
     <div class="col">
       <div class="card" style="width: 18rem;">
         <img src="image/img/2.webp" class="card-img-top img-fluid" alt="...">
-        <div class="card-body">
-          <p class="card-text h5">Buzo style gengar</p>
-        </div>
+       
       </div>
     </div>
     <div class="col">
       <div class="card" style="width: 18rem;">
         <img src="image/img/3.webp" class="card-img-top img-fluid" alt="...">
-        <div class="card-body">
-          <p class="card-text h5">taza varios</p>
-        </div>
+              
       </div>
     </div>
     <div class="col">
       <div class="card" style="width: 18rem;">
         <img src="image/img/4.webp" class="card-img-top img-fluid" alt="...">
-        <div class="card-body">
-          <p class="card-text h5">taza iniciales</p>
-        </div>
+       
+       
       </div>
     </div>
   </div>

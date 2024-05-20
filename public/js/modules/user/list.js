@@ -18,12 +18,12 @@ $(function () {
 function deleteUser(userId){
 /*     debugger */
     Swal.fire({
-        title: "Are you sure?",
+        title: "Está seguro ?",
         icon: "warning",
         showCancelButton: true,
         confirmButtonColor: "#F70922",
         cancelButtonColor: "#797374",
-        confirmButtonText: "Yes, delete it!"
+        confirmButtonText: "Eliminar"
       }).then((result) => {
         if (result.isConfirmed) {
             $.ajax({
@@ -33,7 +33,7 @@ function deleteUser(userId){
                 data: { userId },
                 success: function (data) {
                     if (data.status === 200) {
-                        toastr.success('User delete successfully');
+                        toastr.success('Usuario Eliminado Correctamente !!!');
                         $(`#userId_${userId}`).remove();
                     } else {
                         toastr.error('User delete Error');

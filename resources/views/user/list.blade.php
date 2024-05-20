@@ -20,35 +20,35 @@
 
                         <thead>
                             <tr>
-                                <th style="width:15%; text-align:center">Avatar</th>
+                                <!-- <th style="width:15%; text-align:center">Avatar</th> -->
                                 <th style="width:15%; text-align:center">Nombre</th>
-                                <th style="width:15%; text-align:center">UserName</th>
+                                <!-- <th style="width:15%; text-align:center">UserName</th> -->
                                 <th style="width:10%; text-align:center">Type</th>
                                 <th style="width:15%; text-align:center">Email</th>
-                                <th style="width:20%; text-align:center">Primer Name, Ultimo Name</th>
-                                <th style="text-align:center">Actions</th>
+                                <!-- <th style="width:20%; text-align:center">Primer Name, Ultimo Name</th> -->
+                                <th style="text-align:center">Acciones</th>
                             </tr>
                         </thead>
                         <tbody>
                             @foreach ($users as $user)
                                 <tr id='userId_{{$user->id}}'>
-                                    <td style="text-align: center">
-                                        @if(!empty($user->userdata))
+                                    <!-- <td style="text-align: center"> -->
+                                        <!-- @if(!empty($user->userdata))
                                             <img src="{{ url($user->userdata->avatar) }}" class="elevation-2 userImage" alt="User Image">
                                         @else
                                             <img src="{{ asset('/dist/img/user2-160x160.jpg') }}" class="elevation-2 userImage" alt="User Image">
-                                        @endif
-                                    </td>
+                                        @endif -->
+                                    <!-- </td> -->
                                     <td>
                                         @if(($user) && ($user->name))
                                             <span class="textFirstName"> {{ $user->name }}</span>
                                         @endif
                                     </td>
-                                    <td style=" text-align:center">
+                                    <!-- <td style=" text-align:center">
                                         @if(!empty($user->username))
                                             <span class="textFirstName">{{ $user->username }}</span>
                                         @endif
-                                    </td>
+                                    </td> -->
                                     <td style=" text-align:center">
                                         @if(!empty($user->roles))
                                             @foreach ($user->roles as $itemRole)
@@ -63,11 +63,11 @@
                                             <span class="textFirstName">{{ $user->email }}</span>
                                         @endif
                                     </td>
-                                    <td style=" text-align:center">
+                                    <!-- <td style=" text-align:center">
                                         @if(!empty($user->userdata))
                                         <span class="textFirstName">{{ $user->userdata->first_name }}</span>, <span class="textLastName">{{ $user->userdata->last_name }}</span>
                                         @endif
-                                    </td>
+                                    </td> -->
                                     <td>
                                         <div class="d-flex justify-content-center">
                                             <button type="button" class="btn paddBto" data-user="{{$user}}" data-toggle="modal" data-target="#showUser-{{$user->id}}" data-title="View">
